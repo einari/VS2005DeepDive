@@ -4,8 +4,8 @@ Related back to the .connect(); event Microsoft had in November.
 
 # Tasks
 
-Concat - concatenates all JavaScript files for Features and Directives
-JSHint - Make sure your JavaScript code has the right quality.
+* Concat - concatenates all JavaScript files for Features and Directives
+* JSHint - Make sure your JavaScript code has the right quality.
 
 
 # Structure
