@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <form role="form" data-bind="with: transfer">
+                    <div class="form-group">
+                        <label for="fromAccount">From</label>
+                        <input type="text" class="form-control" id="fromAccount" value="{{from}}" disabled>
+                        <span data-bind="validationMessageFor: from"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="toAccount">To</label>
+                        <input type="text" class="form-control" id="toAccount" ng-model="to" />
+                        <span data-bind="validationMessageFor: to"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" class="form-control" id="amount" ng-model="amount">
+                    </div>
+                </form>
+                <button class="btn btn-primary" ng-click="transfer()">Submit</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

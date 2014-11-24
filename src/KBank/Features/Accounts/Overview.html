@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Account</th>
+                            <th>Balance</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="account in accounts">
+                            
+                            <td>{{account.AccountNumber}}</td>
+                            <td>${{account.Balance}}</td>
+                            <td>
+                                <a class="btn btn-primary" href="/Accounts/Transfer?from={{account.AccountNumber}}">Transfer</a>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
